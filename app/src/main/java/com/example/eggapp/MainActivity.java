@@ -31,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     public void reset(View view) {
+        counter = 10;
+        TextView counterTextView = findViewById(R.id.textview_counter);
+        counterTextView.setText(""+counter);
+        ImageView eggImageView = findViewById(R.id.imageview_egg);
+        eggImageView.setImageResource(R.drawable.surpriseegg1);
     }
 }
